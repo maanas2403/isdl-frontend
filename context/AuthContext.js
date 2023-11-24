@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
 
    let loginUser = async (e) => {
     e.preventDefault();
-    let response = await fetch("https://isdl-backend-2-5q8zq3tkb-maanas2403.vercel.app/login", {
+    let response = await fetch("http://isdl-backend-2-maanas2403.vercel.app/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
