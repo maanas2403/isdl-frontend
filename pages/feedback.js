@@ -13,7 +13,7 @@ function feedback() {
   async function sendFeedback(e) {
     e.preventDefault();
       const response = await fetch(
-        "https://isdl-backend-3-q6qqa0oc9-maanas2403.vercel.app/sendFeedback?",
+        "https://isdl-backend-2-5q8zq3tkb-maanas2403.vercel.app/sendFeedback?",
         {
           method: "POST",
           headers: {
