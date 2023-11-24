@@ -14,7 +14,7 @@ const admin = () => {
   const [pendings, setPendings] = useState(null);
   async function bookHall({pending,ac}) {
     const response = await fetch(
-      "https://isdl-backend-2-5q8zq3tkb-maanas2403.vercel.app/acceptRequest?" + new URLSearchParams({
+      "http://isdl-backend-2-maanas2403.vercel.app/acceptRequest?" + new URLSearchParams({
           jwt: Jwt,
           id: pending.id,
           ac:ac
@@ -36,7 +36,7 @@ const admin = () => {
 
   async function getPendings() {
     const response = await fetch(
-      "https://isdl-backend-2-5q8zq3tkb-maanas2403.vercel.app/getAllPending?" +
+      "http://isdl-backend-2-maanas2403.vercel.app/getAllPending?" +
         new URLSearchParams({ jwt: Jwt }),
       {
         method: "GET",
