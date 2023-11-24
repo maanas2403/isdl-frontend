@@ -14,7 +14,7 @@ const admin = () => {
   const [pendings, setPendings] = useState(null);
   async function bookHall({pending,ac}) {
     const response = await fetch(
-      "https://isdllab.herokuapp.com/acceptRequest?" + new URLSearchParams({
+      "https://isdl-backend-3-q6qqa0oc9-maanas2403.vercel.app/acceptRequest?" + new URLSearchParams({
           jwt: Jwt,
           id: pending.id,
           ac:ac
