@@ -17,7 +17,7 @@ async function bookHall({ id, jwt ,Date,start,end}) {
   let Bg = window.document.getElementsByClassName("react_time_range__track")[0].style.backgroundColor   
   if(Bg=='rgba(98, 203, 102, 0.5)'){
   const response = await fetch(
-    "https://isdllab.herokuapp.com/createBooking?" +
+    "https://isdl-backend-3-q6qqa0oc9-maanas2403.vercel.app/createBooking?" +
       new URLSearchParams({
         id: id,
         date:Date,
