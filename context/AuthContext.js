@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
 
    let loginUser = async (e) => {
     e.preventDefault();
-    let response = await fetch("https://isdllab.herokuapp.com/login", {
+    let response = await fetch("https://isdl-backend-3-q6qqa0oc9-maanas2403.vercel.app/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
