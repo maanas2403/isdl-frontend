@@ -83,7 +83,7 @@ function dashboard() {
     } else {
       (async () => {
         const response = await fetch(
-          "https://isdl-backend-2-5q8zq3tkb-maanas2403.vercel.app/getUserBookings?" +
+          "http://isdl-backend-2-maanas2403.vercel.app/getUserBookings?" +
             new URLSearchParams({ jwt: Jwt }),
           {
             method: "GET",
