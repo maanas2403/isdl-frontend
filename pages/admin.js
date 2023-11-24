@@ -36,7 +36,7 @@ const admin = () => {
 
   async function getPendings() {
     const response = await fetch(
-      "https://isdllab.herokuapp.com/getAllPending?" +
+      "https://isdl-backend-3-q6qqa0oc9-maanas2403.vercel.app/getAllPending?" +
         new URLSearchParams({ jwt: Jwt }),
       {
         method: "GET",
