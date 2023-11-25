@@ -86,7 +86,7 @@ const index = () => {
     } else {
       (async () => {
         const response = await fetch(
-          "https://isdllab.herokuapp.com/allHalls?",
+          "https://isdl-backend-2-maanas2403.vercel.app/allHalls?",
           {
             method: "GET",
           }
