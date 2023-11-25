@@ -108,7 +108,7 @@ const halls = () => {
     );
   } else {
     (async () => {
-      const response = await fetch("http://isdl-backend-2-maanas2403.vercel.app/allHalls?", {
+      const response = await fetch("https://isdl-backend-2-maanas2403.vercel.app/allHalls?", {
         method: "GET",
       });
       let data = await response.json();
